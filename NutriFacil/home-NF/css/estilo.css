@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
+    color: white;
+    font-family: arial;
+}
+
+footer {
+    display: flex;
+    margin: 3px;
+    background: #a1a1a1;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    margin: 0px;
+    flex: 1 1 10px;
+    height: 80px;
+    padding: 0;
+    color: white;
+    font-family: arial;
+    background: linear-gradient(to right, #3C593D, #438E46, #9FD873);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    margin: 3px;
+    flex: 5 1 100px;
+    height: 10px;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 4px;
+}
+
+.login{
+    border: 1.5px solid white;
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.logo{
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+    margin-left: 20px;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    padding: 30px;
+    align-items: center;
+}
+
+.menu a{
+    margin-left: 100px;
+}
+
+main{
+    position: relative;
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    height: calc(100vh - 10px);
+    background-color: #ccc;
+}
+
+.carrossel1{
+    position: relative;
+    display: flex;
+    flex: 1 1 100vw;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.textoprin{
+    display: none;
+    position: absolute;
+    transform: scale(1.5);
+    align-content: center;
+    top: 200px;
+    left: 20%
+
+}
+
+.casal {
+    display: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    transform: scale();
+    margin-right: auto;
+    
+}
+
+aside{
+    display: flex;
+    margin: 3px;
+    position: relative;
+    flex: 1 1 100vw;
+    height: calc(100vh - 100px);
+    overflow: hidden; /*esconde qualquer conteúdo que ultrapasse os limites do contêiner*/
+    flex-wrap: wrap;
+    justify-content: center;
+    height: calc(100vh * 3 - 120px);
+}
+
+.conteudo{
+    position: absolute;
+    display: flex;
+    flex: 1 1 100vw;
+    width: calc(100% - 8%);
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/*.textos{
+    width: 250px;
+    transform: scale(5.1);
+}
+
+.fotos{
+    justify-content: flex-start;
+}*/
+
+.sobre{
+    flex: 1 1 100vw;
+    height: calc(100vh - 100px);
+}
+
+footer{
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+@media only screen and (min-width: 934px){
+    main{
+        height:  calc(100vh - 150px);
+    }
+
+    .menu a{
+        margin-left: 110px;
+    }
+}
+
+@media only screen and (max-width: 923px){
+    main{
+        height:  calc(100vh - 150px);
+    }
+
+    .menu a{
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .menu a{
+        font-size: 15px;
+        margin-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 717px){
+    main{
+        height: calc(100vh - 150px);
+    }
+
+    .menu a{
+        margin-left: 30px;
+        font-size: 13px;
+    }
+
+    .login {
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 505px){
+    main{
+        height: calc(100vh - 150px);
+    }
+
+    .menu a{
+        margin-left: 17px;
+    }
+
+    .login {
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 471px){
+    header{
+        flex: 1 1 33vw;
+        height: 12vh;
+    }
+
+    nav{
+        flex: 4 1 4vw;
+        height: 12vh;
+    }
+
+    .menu a{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .login {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 441px){
+    .menu {
+        display: none;
+    }
+}
